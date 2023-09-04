@@ -3,7 +3,7 @@ import React from "react";
 function Footer(){
     const anoAtual = new Date().getFullYear();
     return <footer><p>
-        Copyright @ {anoAtual}
+        @DanielBorba Copyright @ {anoAtual}
     </p>
     </footer>
 }
