@@ -1,10 +1,17 @@
+const userModel = require('../models/usersModel')
 
-
-const getAll = (_req, res) => {
-    return res.status(200).json ({ message: 'controller funcionando'});
+const getAll = async (_req, res) => {
+   const users = await userModel.getAll();
+   return res.status(200).json(users)
 };
 
+const createUser = async (req, res) => {
+    const createdUser = await userModel.createUser(req.body);
+
+    return res.status(201).json(createdUser)
+}
 
 module.exports = {
-    getAll
+    getAll,
+    createUser
 }
