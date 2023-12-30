@@ -11,10 +11,21 @@ const createUser = async (users) => {
     query = 'INSERT INTO users(nome, statusProcesso, iniciado_em) VALUES(?, ?, ?)';
 
     const [createdUser] = await connection.execute(query, [nome, 'pendente', dateUTC ]);
-        return {insertId: createdUser.insertId}
+    return {
+        message: "Usuário criado com sucesso", 
+        insertId: createdUser.insertId 
+    }
 }
+
+
+const deleteUser = async(id) => {
+    const removedUser = await connection.execute( 'DELETE FROM users WHERE id = ?',
+    [id]);
+    return removedUser;
+};
 
 module.exports = {
     getAll,
-    createUser
+    createUser,
+    deleteUser
 }

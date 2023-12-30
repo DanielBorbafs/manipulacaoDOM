@@ -11,7 +11,14 @@ const createUser = async (req, res) => {
     return res.status(201).json(createdUser)
 }
 
+const deleteUser = async (req, res) => {
+    const {id} = req.params 
+    await userModel.deleteUser(id);
+    return res.status(204).json();
+}
+
 module.exports = {
     getAll,
-    createUser
+    createUser,
+    deleteUser
 }
