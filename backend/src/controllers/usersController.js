@@ -17,8 +17,16 @@ const deleteUser = async (req, res) => {
     return res.status(204).json();
 }
 
+const updateUser = async (req, res) => {
+    const { id } = req.params;
+
+    await userModel.updateUser(id, req.body);
+    return res.status(204).json()
+}
+
 module.exports = {
     getAll,
     createUser,
-    deleteUser
+    deleteUser,
+    updateUser
 }
