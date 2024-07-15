@@ -6,8 +6,14 @@ const longoBt = document.getElementsByClassName('app__card-button--longo')[0];
 const banner = document.querySelector('.app__image')
 const titulo = document.querySelector('.app__title')
 const botoes = document.querySelectorAll('.app__card-button')
+const startPauseBt = document.querySelector('#start-pause')
 const musicaFocoInput = document.querySelector('#alternar-musica')
 const musica = new Audio('./sons/luna-rise-part-one.mp3')
+
+let tempoDecorridoEmSegundos = 5
+
+
+
 musica.loop = true
 
 musicaFocoInput.addEventListener('change', () => {
@@ -64,3 +70,10 @@ function alterarContexto(contexto) {
 
     }
 }
+
+const contagemRegressiva = () => {
+    tempoDecorridoEmSegundos -= 1
+    console.log('Temporizador: ' + tempoDecorridoEmSegundos)
+}
+
+startPauseBt.addEventListener('click', contagemRegressiva)
