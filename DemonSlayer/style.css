@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+
+h1{
+    font-family: Inter;
+    color: #ffff;
+    font-size: 48px;
+}
+
+li{
+    list-style: none;
+}
+
+
+body {
+    background-image: url(./imgs/bg.png);
+    min-height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative; /* Ensure the body is positioned */
+}
+
+[data-contexto="tanjiro"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #163D37 0%, #170814 48.44%, #050505 100%);
+    opacity: 0.5;
+    z-index: 1; 
+}
+
+
+[data-contexto="outro"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #e0b807 0%, #2915e4 48.44%, #d31313 100%);
+    opacity: 0.5;
+    z-index: 1; 
+}
+
+
+[data-contexto="teste"], [data-contexto="outro"] {
+    position: relative;
+    z-index: 2; 
+}
+
+
+.logo-img, .logo-img img{
+    z-index: 3;
+    display: flex;
+    justify-content: center;
+}
+
+#container > .main_content__text-section , .main_content__img-section{
+    z-index: 3;
+}
+
+
+#container{
+    padding-top: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.main_content__text-section{
+    width: 50%;
+}
+
+#paragrafo {
+    padding-top: 1rem;
+    font-family: inter;
+    color: #ffff;
+    font-size: 18px;
+    font-weight: 200;
+    width: 80%;
+}
+
+.select_list{
+    padding-top: 2.5rem;
+    display: flex;
+    gap: 1rem;
+}
+
+.list-item img{
+    width: 64px;
+    cursor: pointer;
+}
+
+.img-section__container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.person_name{
+    font-size: 24px;
+    font-family: inter;
+    font-weight: 500;
+    color: #ffff;
+}
