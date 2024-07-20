@@ -32,28 +32,34 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, #163D37 0%, #170814 48.44%, #050505 100%);
+    background: linear-gradient(180deg, #1f8677 0%, #170814 48.44%, #050505 100%);
     opacity: 0.5;
     z-index: 1; 
 }
 
 
-[data-contexto="outro"]::before {
+[data-contexto="daki"]::before {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
-    background: linear-gradient(180deg, #e0b807 0%, #2915e4 48.44%, #d31313 100%);
+    background: linear-gradient(180deg, #FC8CAD 0%, #A91E6B 48.44%, #050505 100%);
     opacity: 0.5;
     z-index: 1; 
 }
 
-
-[data-contexto="teste"], [data-contexto="outro"] {
-    position: relative;
-    z-index: 2; 
+[data-contexto="kyojuro"]::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: linear-gradient(180deg, #B14731 0%, #64450f 48.44%, #080808 100%);
+    opacity: 0.5;
+    z-index: 1; 
 }
 
 
@@ -112,3 +118,9 @@ body {
     font-weight: 500;
     color: #ffff;
 }
+
+.border {
+    border: 2px solid #47C7AA;
+    border-radius: 100%;
+}
+
