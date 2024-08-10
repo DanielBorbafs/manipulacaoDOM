@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeTube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <div class="logo">
+        <img src="logo.svg" />
+      </div>
+      <div class="center">
+        <div class="search">
+          <input
+            spellcheck="false"
+            type="text"
+            class="search"
+            id="search"
+            placeholder="Em construção"
+            data-pesquisa
+          />
+          <button><i class='bx bx-microphone'  data-botao-pesquisa></i></button>
+        </div>
+      </div>
+      <nav>
+        <a href="./pages/enviar-video.html"><i class='bx bx-video-plus'></i></a>
+      </nav>
+    </nav>
+    <main>  
+      <ul class="videos__container" alt="videos alura" data-lista>
+       
+      </ul>
+    </main>
+    <script src="./js/mostrarVideos.js" type="module"></script>
+    <script src="./js/buscaVideo.js" type="module"></script>
+  </body>
+</html>

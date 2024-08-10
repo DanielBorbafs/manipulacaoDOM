@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AnimeTube</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css">
+    <link rel="stylesheet" href="estilos-form.css">
+    <link rel="stylesheet" href="../styles.css">
+  </head>
+  <body>
+    <nav class="navbar">
+      <a href="/index.html"><i class='bx bx-left-arrow-alt'></i></a>
+
+      <div class="logo">
+        <img src="../logo.svg" />
+      </div>
+      <div class="center">
+        <div class="search">
+          <input
+            spellcheck="false"
+            type="text"
+            class="search"
+            id="search"
+            placeholder="em construção"
+          />
+          <button><i class='bx bx-microphone' ></i></button>
+        </div>
+      </div>
+    </nav>
+    <main class="container">
+
+        <form class="container__formulario" data-formulario>
+            <h2 class="formulario__titulo">Envie um vídeo!</h2>
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="url">Link embed</label>
+                    <input name="url" class="campo__escrita" required
+                        placeholder="Por exemplo: https://www.youtube.com/embed/FAY1K2aUg5g" id='url'  data-url />
+                </div>
+
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="titulo">Titulo do vídeo</label>
+                    <input name="titulo" class="campo__escrita" required placeholder="Neste campo, dê o nome do vídeo"
+                        id='titulo' data-titulo />
+                </div>
+
+                <div class="formulario__campo">
+                    <label class="campo__etiqueta" for="imagem">Imagem de perfil</label>
+                    <input name="imagem" class="campo__escrita" required placeholder="Insira a url da imagem"
+                        id='imagem' data-imagem />
+                </div>
+
+            <button class="formulario__botao" type="submit" id="btn-enviar">Enviar</button>
+
+            <!--<input class="formulario__botao" type="submit"/>-->
+        </form>
+
+    </main>
+    <script src="../js/criarVideo.js" type="module"></script>
+  </body>
+</html>

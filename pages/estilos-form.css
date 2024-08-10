@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+* {
+    color: white;
+    font-family: Open Sans;
+}
+
+.container {
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+.container__formulario {
+    margin: 3em 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: initial;
+}
+
+.formulario__campo {
+    margin: 1em;
+    font-size: 1.6em;
+}
+
+.formulario__titulo {
+    color: white;
+    font-weight: bold;
+    font-size: 21px;
+}
+
+.campo__escrita {
+    width: 50vw;
+    border-radius: 1rem;
+    display: block;
+    color: black;
+    padding: 1em
+}
+
+.campo__etiqueta {
+    line-height: 1.5;
+    padding: 0 0 .1em 1em;
+    font-weight: 700;
+    color: var(--azul-medio);
+}
+
+#btn-enviar{
+    font-size: 14px;
+    font-family: Open Sans;
+    width: 120px;
+    height: 40px;
+    border-radius: 6px;
+    border: 1px solid red;
+}
+
+#btn-enviar:hover{
+    background-color: rgba(255, 0, 0, 0.308);
+}
+
+
+input{
+    border: none;
+}
